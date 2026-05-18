@@ -1,6 +1,6 @@
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import { useAuth } from '@/contexts/AuthContext';
-import { CarFront, Newspaper, LayoutDashboard, LogOut, Settings, Users } from 'lucide-react';
+import { CarFront, Newspaper, LayoutDashboard, LogOut } from 'lucide-react';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { useTheme } from '@/components/ThemeProvider';
 

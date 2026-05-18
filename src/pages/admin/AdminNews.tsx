@@ -102,7 +102,7 @@ export default function AdminNews() {
                     </Link>
                     
                     <AlertDialog>
-                      <AlertDialogTrigger asChild>
+                      <AlertDialogTrigger>
                         <Button variant="outline" size="sm" className="h-8 px-2 text-red-600 border-red-200 hover:bg-red-50">
                           <Trash2 className="w-4 h-4" />
                         </Button>

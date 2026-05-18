@@ -44,9 +44,9 @@ export default function AdminCarsForm() {
             merk: car.merk,
             model: car.model,
             harga: car.harga,
-            kondisi: car.kondisi,
-            transmisi: car.transmisi,
-            bahan_bakar: car.bahan_bakar,
+            kondisi: car.kondisi || 'Baru',
+            transmisi: car.transmisi || 'Automatic',
+            bahan_bakar: car.bahan_bakar || 'Bensin',
             warna: car.warna,
             tahun_pembuatan: car.tahun_pembuatan,
             image: car.image,
@@ -69,8 +69,8 @@ export default function AdminCarsForm() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSelectChange = (name: string, value: string) => {
-    setFormData({ ...formData, [name]: value });
+  const handleSelectChange = (name: string, value: string | null) => {
+    setFormData({ ...formData, [name]: value || '' });
   };
 
   const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {

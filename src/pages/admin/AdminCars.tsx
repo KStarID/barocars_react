@@ -107,7 +107,7 @@ export default function AdminCars() {
                   <div className="flex justify-end gap-2">
                     
                     <Dialog>
-                      <DialogTrigger asChild>
+                      <DialogTrigger>
                         <Button variant="outline" size="sm" className="h-8 px-2 text-emerald-600 border-emerald-200 hover:bg-emerald-50">
                           <Eye className="w-4 h-4" />
                         </Button>
@@ -167,7 +167,7 @@ export default function AdminCars() {
                     </Link>
                     
                     <AlertDialog>
-                      <AlertDialogTrigger asChild>
+                      <AlertDialogTrigger>
                         <Button variant="outline" size="sm" className="h-8 px-2 text-red-600 border-red-200 hover:bg-red-50">
                           <Trash2 className="w-4 h-4" />
                         </Button>

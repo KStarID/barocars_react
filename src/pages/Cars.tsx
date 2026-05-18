@@ -80,7 +80,7 @@ export default function Cars() {
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
             </div>
-            <Select value={filterKondisi} onValueChange={setFilterKondisi}>
+            <Select value={filterKondisi} onValueChange={(val) => setFilterKondisi(val || 'All')}>
               <SelectTrigger className="w-full sm:w-[150px] bg-card text-card-foreground border-border">
                 <SelectValue placeholder="Condition" />
               </SelectTrigger>

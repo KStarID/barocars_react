@@ -218,7 +218,7 @@ export default function AdminProfile() {
             </div>
 
             <AlertDialog>
-              <AlertDialogTrigger asChild>
+              <AlertDialogTrigger>
                 <Button variant="destructive" className="bg-red-600 hover:bg-red-700">
                   <Trash2 className="w-4 h-4 mr-2" />
                   Delete Account
